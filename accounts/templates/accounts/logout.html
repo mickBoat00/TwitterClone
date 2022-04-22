@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <h2>Log out of Twitter?</h2>
+
+        You can always log back in at any time. 
+        If you just want to switch accounts, 
+        you can do that by adding an existing account. 
+
+        <button>Logout</button>
+    </form>
+
+    <a href="/" >Cancel</a>
+
+{% endblock %}

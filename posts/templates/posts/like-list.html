@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% if type == 'Retweets' %}
+
+    Retweeted by:
+
+    {% else %}
+
+    liked by:
+
+    {% endif %}
+
+    <ul>
+        {% for x in likes_list %}
+
+            <li>{{ x.user }}</li>
+
+        {% endfor %}
+
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        
+        Are you sure you want to delete {{ object}}
+
+
+        <button type="submit">Yes, Delete</button>
+
+        <button type="button"><a href="/">No, Cancel</a></button>
+
+    </form>
+
+
+{% endblock %}

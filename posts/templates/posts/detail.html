@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div>
+        --------------------------------------
+        <br>
+        {{ post.content }} 
+
+        <br>
+        -----------------------------------
+
+        <br>
+
+        <a href="{% url 'post:retweet-list' post.id %}">{{ post.retweet_set.count }} retweet{{ post.retweet_set.count|pluralize }}</a>
+        <a href="q">{{ post.quote_tweets }} Quote Tweets</a>
+        <a href="{% url 'post:like-list' post.id %}">{{ post.like_set.count }} Like{{ post.like_set.count|pluralize }} </a>
+         <br>
+         <br>
+
+         <!-- <a href="{{ post.get_absolute_url }}"> reply</a>
+        <a href="{% url 'post:retweet-post' post.id %}">retweet</a>
+        <a href="{% url 'post:like-post' post.id %}">like </a> -->
+
+        <form action="{% url 'post:post-comment' post.id %}" method="post">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button><Section>Reply</Section></button>
+        </form>
+
+        <br>
+
+        <h3>Comments</h3>
+
+        {% for comment in comments %}
+            
+
+            {{ comment.user }} {{ comment.username }} <br>
+
+            replying to @{{ post.author }} <br> 
+
+            {{ comment.comment }} <br>
+            <br>
+
+        {% endfor %}
+
+        <br>
+        
+
+
+    </div>
+
+    <br>
+
+{% endblock %}
