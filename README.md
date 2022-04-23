@@ -4,10 +4,25 @@ A simple social media app in Django, to learn the process of creating popular so
 
 To install
 1. clone the repository
-2. Create a virtual environment
-  Use the command
+  ```
+  git clone 
+  ```
+3. Create a virtual environment
+  Use the command in the base diretory of the cloned project. Use the command
+  ```
   python3 -m venv venv 
-  in the base directory
-3. pip install the requiremnts
+  ```
+  
+3. Activate the virtual environment. Use this commmand for linux /Mac users 
+  ```
+   source venv/bin/activate
+  ```
+   
+5. Install the requiremnts
+  ```
    pip install -r requirements.txt
+  ```
 4. Make sure to run your server with an ip of 0.0.0.0 because it is the only ALLOWED HOST
+  ```
+   python manage.py runserver 0:8000
+  ```
