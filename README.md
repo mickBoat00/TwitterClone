@@ -27,3 +27,10 @@ To install
   ```
    python manage.py runserver 0:8000
   ```
+  
+  To run test
+  Run this command in your terminal
+  ```
+  pytest
+  ```
+  
