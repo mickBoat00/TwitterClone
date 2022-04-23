@@ -2,6 +2,7 @@
 
 A simple social media app in Django, to learn the process of creating popular social media apps like Twitter
 
+
 To install
 1. clone the repository
   ```
