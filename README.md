@@ -29,7 +29,7 @@ To install
   ```
   
   To run test
-  Run this command in your terminal
+   - Run this command in your terminal
   ```
   pytest
   ```
