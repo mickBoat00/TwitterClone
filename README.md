@@ -19,7 +19,7 @@ To install
    source venv/bin/activate
   ```
    
-5. Install the requiremnts
+5. Install the requirements
   ```
    pip install -r requirements.txt
   ```
