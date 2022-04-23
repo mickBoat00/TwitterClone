@@ -2,6 +2,12 @@
 
 A simple social media app in Django, to learn the process of creating popular social media apps like Twitter
 
+#### Current features of the app
+- Create, Read, Update, Delete CRUD operations on posts
+- Like Retweet, Comment on Post
+- Show list of the number of people on Liked or Retweeted the post
+- User login System
+
 
 To install
 1. clone the repository
